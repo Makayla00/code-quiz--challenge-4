@@ -1,0 +1,41 @@
+PSUDEOCODE
+
+__START_PAGE__
+header-push button to start
+
+start button (inline js- onClick start quiz function)
+
+--JS--
+array of objects
+( questions {title=question, choices=multiple-choices, answer=corect-choice} * 5 )
+
+    quiz function[
+        if (time > 0){
+            for loop (var i = 0; i<=5; i++)
+                display(questions[i].title)
+                display (question [i].choices)
+              if (choice selected = answer )
+                display "correct answer"
+              else()
+                display "wrong answer"
+                subtract time
+            if(i = 6 && time > 0)
+                display (high score page)
+        }
+        else (time = 0){
+            display "game over--your out of time"
+            display (high score page )
+            
+        }
+    ]
+--JS--
+
+ top left displays current high score
+ top right displays time counter
+
+__HIGH_SCORE_PAGE__
+add new highscore with initals and scoore ( js- _title_.push() )
+ high score page displays initals and high score in order ( js- _title_.sort() )
+ 
+
+
